@@ -1,0 +1,13 @@
+Django==4.2.3
+fyers_apiv2==2.0.6
+numpy==1.21.5
+pandas==1.4.2
+pycryptodome==3.16.0
+pyotp==2.8.0
+Requests==2.31.0
+six==1.16.0
+bootstrap4==0.1.0
+crispy-bootstrap4==2022.1
+django-crispy-forms==2.0
+Pillow==9.0.1
+stripe==6.1.0

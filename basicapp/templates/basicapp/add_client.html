@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Client details{% endblock title %}
+{% block body %}
+<h1>Add details</h1>
+{% load crispy_forms_tags %}
+
+<!--Login--> 
+<div class="container">
+    <h1>Add Account Details</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form_client|crispy }}
+      <!-- {{ form_client.as_p }} -->
+      <button type="submit">Save client details</button>
+    </form>
+</div>
+
+{% endblock body %}
+

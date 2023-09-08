@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Run code{% endblock title %}
+{% block body %}
+
+{% load crispy_forms_tags %}
+
+<!--Login--> 
+<div class="container">
+
+    <h1>Run your bot</h1>
+    {% if request.user.is_authenticated %}
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="run_script">Run script</button>
+        </form>
+
+    {% else %}
+
+        <h1> Please subscribe to the strataegy</h1>
+
+    {% endif %}
+    
+</div>
+
+{% endblock body %}
